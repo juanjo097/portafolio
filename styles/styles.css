@@ -346,7 +346,16 @@ h6
 	overflow-x: scroll;
 	padding: 30px 0 10px 0;
 	position: relative;
-	overflow: hidden;
+}
+
+::-webkit-scrollbar{
+	height: 4px;
+	width: 4px;
+	background: gray;
+}
+::-webkit-scrollbar-thumb:horizontal{
+	background: #000;
+	border-radius: 10px;
 }
   
 .entry 
@@ -517,6 +526,8 @@ h6
 			'left-column'
 			'right-column'
 		;
+		overflow: hidden;
+
 	}
 
 	.right-column
